@@ -4,7 +4,7 @@ import logging
 import sys
 import time
 
-# Create a logger object
+# create a logger object
 logger = logging.getLogger("my_logger")
 logger.setLevel(logging.DEBUG)
 
@@ -57,14 +57,14 @@ if "__main__":
     console_handler = logging.StreamHandler()
     console_handler.setLevel(logging.DEBUG)
 
-    # Create a formatter that formats log messages
+    # create a formatter that formats log messages
     formatter = logging.Formatter("%(asctime)s - %(levelname)s - %(message)s")
 
-    # Set the formatter for the file handler and console handler
+    # set the formatter for the file handler and console handler
     file_handler.setFormatter(formatter)
     console_handler.setFormatter(formatter)
 
-    # Add the file handler and console handler to the logger
+    # add the file handler and console handler to the logger
     logger.addHandler(file_handler)
     logger.addHandler(console_handler)
 
